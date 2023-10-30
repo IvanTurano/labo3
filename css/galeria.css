@@ -1,0 +1,9 @@
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedor-galeria a {
+    margin: 20px;
+}

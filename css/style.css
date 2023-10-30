@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background: url(../images/fondo-manga.jpg) fixed;
+}
+
+.cabecera,
+.logo-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+#icono{
+    display: none;
+}
+
+#cerrar {
+    display: none;
+}
+
+.logo-nav img {
+    width: 100%;
+}
+
+.logo-nav a {
+    width: 11%;
+}
+
+
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    padding: 16px;
+    margin: 0 16px;
+}
+
+.navegacion ul li a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    transition: color .2s ease;
+}
+
+.navegacion ul li a:hover {
+    color: rgb(255, 178, 0);
+}
+
+.navegacion .submenu .childs {
+    display: none;
+    background-color: #000;
+    position: absolute;
+}
+
+.navegacion ul li:hover .childs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.portada h1 {
+    font-size: 15rem;
+    font-weight: bold;
+}
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    min-height: 50vh;
+}
+
+.bienvenida h2 {
+    font-size: 8rem;
+}
+
+.bienvenida p {
+    font-size: 1.2rem;
+}
+
+.contenido-destacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 0em;
+    width: 100%;
+}
+
+.contenido-destacado h2 {
+    font-size: 9rem;
+    font-weight: bold;
+}
+
+.contenido-destacado p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1.6em 0;
+}
+
+.acerca-de {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.acerca-de h3 {
+    font-size: 3em;
+    margin: .6em;
+}
+
+.acerca-de p {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 1.4em 0;
+}
+
+.btn {
+    display: block;
+    padding: 1em;
+    width: 200px;
+    background-color: #000;
+    color: rgb(255, 178, 0);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.6em;
+    transition: color .2s ease;
+    transition: background .2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(255, 178, 0);
+    color: #000;
+}
+
+strong a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid rgb(255, 178, 0);
+}
+
+strong a:hover {
+    color: rgb(255, 178, 0);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 1.4em;
+    width: 90%;
+}
+
+.contenedor h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contenedor-cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    margin: .5em 1.2em;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow .3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.7)
+}
+
+.card-img a img {
+    width: 100%;
+}
+
+.card-img a {
+    width: 20%;
+}
+
+.card-contenido {
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+}
+
+.card-contenido h3 {
+    font-size: 1.8em;
+}
+
+.card-contenido p {
+    font-size: 1.2em;
+}
+
+.card-contenido a {
+    font-size: 1.3em;
+    color: #000;
+    transition: color .3s ease;
+}
+
+.card-contenido a:hover {
+    color: rgb(255, 178, 0);
+}
+
+.arco-titulo h3 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.personajes-titulo h3 {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedor-gal {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    margin-top: 6em;
+}
+
+.contenedor-gal h3 {
+    font-size: 5em;
+    margin: .3em 0;
+}
+
+.contenedor-gal p {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 1.4em 0;
+}
+
+.galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria-imagenes img {
+    width: 380px;
+    margin: .2em .4em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 12em;
+}
+
+footer div img {
+    width: 60%;
+    margin: 1em 0;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1550px) {
+    .portada h1 {
+        font-size: 13rem;
+    }
+
+    .bienvenida h2 {
+        font-size: 6rem;
+    }
+
+    .bienvenida p {
+        font-size: 1.1rem;
+    }
+
+    .contenido-destacado h2 {
+        font-size: 6rem;
+    }
+
+    .contenido-destacado > p {
+        font-size: 2.6rem;
+    }
+
+    .logo-nav a {
+        width: 14%;
+    }
+}
+
+
+@media screen and (max-width:1240px) {
+    .portada h1 {
+        font-size: 10rem 
+    }
+
+    .bienvenida p {
+        font-size: 1rem;
+    }
+
+    .acerca-de p {
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+@media screen and (max-width:1140px) {
+    
+    #icono {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    #cerrar {
+        display: inline-block;
+        font-size: .9rem;
+    }
+
+    .logo-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .logo-nav a {
+        width: 18%;
+        margin: 1em;
+    }
+
+    .logo-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+        width: auto;
+    }
+
+    .navegacion ul li {
+        display: block;
+    }
+
+    .childs > li {
+        font-size: .4rem;
+    }
+    
+
+}
+
+
+@media screen and (max-width:580px) {
+    
+ 
+    
+}

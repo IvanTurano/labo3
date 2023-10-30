@@ -1,0 +1,62 @@
+.portada h1 {
+    font-size: 5em;
+}
+
+.formulario {
+    background-color: #fff;
+    width: 100vw;
+}
+
+.contenedor-formulario {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+form div {
+    margin: 1em;
+}
+
+form div input,
+form div button,
+form div textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #FFA533;
+    outline: 0;
+}
+
+form div input:focus,
+form div textarea:focus
+{
+    background-image: linear-gradient(to top, #ffefda, #fff0de, #fff2e2, #fff3e5, #fff5e9);
+}
+
+form div button {
+    background-image: linear-gradient(to right top, #ffa533, #ffb251, #ffbe6d, #ffca88, #ffd6a3);
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.form-informacion {
+    padding: .5em;
+    text-align: center;
+}
+
+.form-informacion h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-informacion p {
+    margin: .4em;
+}

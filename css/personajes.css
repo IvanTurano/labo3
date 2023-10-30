@@ -1,0 +1,15 @@
+.personaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.personaje p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 1.4em 0;
+}
