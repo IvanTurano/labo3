@@ -22,12 +22,25 @@ body {
     background-color: #fff;
 }
 
-#icono{
+#menu{
     display: none;
 }
 
 #cerrar {
     display: none;
+}
+
+.btn-responsive{
+    padding: 1em;
+    background-color: rgb(255, 178, 0);
+    font-weight: bold;
+    transition: color .2s ease;
+    transition: background .2s ease;
+}
+
+.btn-responsive:hover{
+    color: rgb(255, 178, 0);
+    background-color: #000;
 }
 
 .logo-nav img {
@@ -64,6 +77,7 @@ body {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
+    cursor: pointer;
     transition: color .2s ease;
 }
 
@@ -111,6 +125,7 @@ body {
 
 .bienvenida p {
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .contenido-destacado {
@@ -125,12 +140,7 @@ body {
 .contenido-destacado h2 {
     font-size: 9rem;
     font-weight: bold;
-}
-
-.contenido-destacado p {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 1.6em 0;
+    margin-bottom: 1em;
 }
 
 .acerca-de {
@@ -295,7 +305,7 @@ strong a:hover {
 }
 
 .galeria-imagenes img {
-    width: 380px;
+    height: 300px;
     margin: .2em .4em;
 }
 
@@ -308,17 +318,37 @@ footer {
     width: 100%;
     margin-top: 12em;
 }
+ 
 
-footer div img {
+.copy-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.copy-footer img {
     width: 60%;
     margin: 1em 0;
 }
 
-footer > div {
+.redes-footer{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.redes-footer img {
+    max-width: 1.5rem;
+    margin: .3em;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div {
+    padding: 1em;
 }
 
 
@@ -350,6 +380,7 @@ footer > div {
 
 
 @media screen and (max-width:1240px) {
+
     .portada h1 {
         font-size: 10rem 
     }
@@ -367,13 +398,13 @@ footer > div {
 
 @media screen and (max-width:1140px) {
     
-    #icono {
-        display: inline-block;
+    #menu {
+        display: block;
         margin: 1em;
     }
 
     #cerrar {
-        display: inline-block;
+        display: block;
         font-size: .9rem;
     }
 
@@ -381,7 +412,6 @@ footer > div {
         flex-direction: row;
         justify-content: space-between;
     }
-
 
     .logo-nav a {
         width: 18%;
@@ -392,8 +422,9 @@ footer > div {
         flex-direction: row;
         justify-content: space-between;
     }
-
     .navegacion {
+        opacity: 0;
+        visibility: hidden;
         flex-direction: column;
         align-items: end;
         justify-content: flex-end;
@@ -404,20 +435,139 @@ footer > div {
         width: auto;
     }
 
+    .navegacion.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
     .navegacion ul li {
         display: block;
     }
 
     .childs > li {
-        font-size: .4rem;
+        font-size: .6rem;
     }
+
+    .navegacion ul li a{
+        font-size: 1.5em;
+    }
+
+
     
 
 }
 
 
-@media screen and (max-width:580px) {
+@media screen and (max-width:1000px) {
     
- 
+    .portada h1 {
+        font-size: 8rem 
+    }
+
+    .bienvenida h2 {
+        font-size: 5rem;
+    }
+
+    .bienvenida {
+        padding: 1em;
+    }
+
+    .contenido-destacado h2 {
+        font-size: 4rem;
+    }
+
+    .acerca-de h3 {
+        font-size: 2rem;
+    }
+    .acerca-de {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width:870px) {
     
+    .bienvenida h2 {
+        font-size: 4.5rem;
+    }
+    .galeria-imagenes img {
+        height: 200px;
+    }
+    .contenedor-gal {
+        padding: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer > div {
+        margin: 2em 0;
+    }
+
+}
+
+@media screen and (max-width:760px) {
+
+    .portada h1 {
+        font-size: 6rem 
+    }
+    .bienvenida h2 {
+        font-size: 4rem;
+    }
+
+    .acerca-de h3 {
+        font-size: 1.5rem;
+    }
+
+    .arco-titulo h3 {
+        font-size: 3rem;
+    }
+
+
+}
+
+@media screen and (max-width:675px) {
+    
+    .bienvenida h2 {
+        font-size: 3rem;
+    }
+
+    .acerca-de h3 {
+        font-size: 1.4rem;
+    }
+
+    .contenido-destacado h2 {
+        font-size: 3rem;
+    }
+
+  
+}
+
+@media screen and (max-width:600px) {
+    .portada h1 {
+        font-size: 5rem 
+    }
+
+    .arco-titulo h3 {
+        font-size: 2rem;
+    }
+
+    .personajes-titulo h3 {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:510px){
+    .portada h1 {
+        font-size: 4rem 
+    }
+
+    .bienvenida h2 {
+        font-size: 2.2rem;
+    }
+
+    .contenido-destacado h2 {
+        font-size: 2.2rem;
+    }
 }

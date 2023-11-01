@@ -5,5 +5,12 @@
 }
 
 .contenedor-galeria a {
-    margin: 20px;
+    margin: .4em;
 }
+
+.contenedor-galeria a img {
+    height: 300px;
+    border: #000 solid 3px;
+}
+
+

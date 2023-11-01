@@ -1,0 +1,19 @@
+.saga-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+}
+
+.saga-container img{
+    float: left;
+}
+
+.saga-container p {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 1.4em;
+}

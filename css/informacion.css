@@ -1,0 +1,86 @@
+.contenedor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+.info h2 {
+    text-align: center;
+    margin: .5em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.info a {
+    margin: .3em 0;
+    color: #000;
+}
+
+.info a:hover {
+    color: rgb(255, 178, 0);;
+}
+.info a,p {
+    font-size: 1.4em;
+}
+
+.argumento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    margin: 3em 0;
+    padding: 2em;
+}
+
+.argumento h2 {
+    font-size: 3em;
+    margin: .3em 0;
+}
+
+.mejores-momentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    margin: 3em 0;
+    padding: 2em;
+}
+
+.mejores-momentos h2 {
+    text-align: center;
+    margin-top: .1em;
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+.mejores-momentos div {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 2em 0;
+    width: 100%;
+}
+
+.mejores-momentos div img {
+    height: 300px;
+    float: left;
+}
+
+.mejores-momentos div p {
+    margin-left: .6em;
+}
