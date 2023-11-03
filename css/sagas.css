@@ -17,3 +17,9 @@
     font-weight: 400;
     margin: 1.4em;
 }
+
+@media screen and (max-width:1000px){
+    .saga-container{
+        flex-direction: column;
+    }
+}
