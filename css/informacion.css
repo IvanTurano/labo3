@@ -86,3 +86,16 @@
 .mejores-momentos div p {
     margin-left: .6em;
 }
+
+@media screen and (max-width:1000px) {
+    .mejores-momentos div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mejores-momentos div img {
+        height: 210px;
+        padding: .5em;
+    }
+}
