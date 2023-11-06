@@ -9,7 +9,7 @@
 .info{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     background-color: #fff;
     width: 100%;
@@ -97,5 +97,9 @@
     .mejores-momentos div img {
         height: 210px;
         padding: .5em;
+    }
+
+    .info a, p{
+        font-size: 1.1em;
     }
 }

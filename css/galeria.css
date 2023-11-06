@@ -10,8 +10,8 @@
 
 .contenedor-galeria a img {
     height: 300px;
-    transition: all .4s ease;
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.4);
+    transition: all .4s ease;
 }
 
 .contenedor-galeria a img:hover{

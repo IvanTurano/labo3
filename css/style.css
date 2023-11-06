@@ -529,6 +529,8 @@ footer > div {
         font-size: 3rem;
     }
 
+ 
+
 
 }
 
@@ -568,6 +570,10 @@ footer > div {
 
     .acerca-de a img {
         height: 300px;
+    } 
+
+    .contenedor-gal p {
+        font-size: 1.1em;
     }
 
 }
@@ -584,4 +590,10 @@ footer > div {
     .contenido-destacado h2 {
         font-size: 2.2rem;
     }
+
+    .galeria-imagenes img {
+        height: 180px;
+    }
+
+    
 }
